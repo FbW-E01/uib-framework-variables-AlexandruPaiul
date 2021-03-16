@@ -1,2 +1,160 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+}
+
+  ul {
+    margin-bottom: 0;
+    padding: 4px;
+
+    display: flex;
+    justify-content: center;
+
+    li {
+      color: blue;
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+.header {
+  padding-top: 5%;
+  text-align: center;
+  background: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+}
+
+.card {
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0ddb2;
+  width: 90%;
+  margin-bottom: 20px;
+  // img {
+
+  //     width:200px;
+  // }
+  .container {
+    width: 100%;
+    padding: 0;
+
+    margin-top: 10px;
+    h4 {
+      font-weight: 700;
+    }
+  }
+}
+.aside {
+  margin: auto;
+  margin-bottom: 20px;
+  // margin:auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgb(181, 243, 172);
+  h4 {
+    font-weight: 700;
+  }
+}
+.article {
+  margin: auto;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+footer {
+  background-color: #016690;
+  ul {
+    li {
+      color: white;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    //  margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    width: 80%;
+    .container {
+      margin-left: 10px;
+    }
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+  footer {
+      ul{
+          justify-content: center;
+      }
+  }
+  .asides {
+      
+      display: flex;
+      width: 95%;
+      margin: auto;
+      bottom:20px;
+      .aside {
+        width: 25%;
+
+      }
+      
+  }
+}
+
+@media (min-width: 1024px) {
+    .card {
+      //  margin-right: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row;
+      width: 45%;
+      .container {
+        margin-left: 10px;
+      }
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    ul {
+      justify-content: flex-end;
+    }
+    footer {
+        ul{
+            justify-content: center;
+        }
+    }
+    .asides {
+        
+        display: flex;
+        width: 95%;
+        margin: auto;
+        bottom:20px;
+        .aside {
+          width: 25%;
+  
+        }
+        
+    }
+  }
+  
+.cards {
+    // background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
